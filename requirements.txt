@@ -1,0 +1,9 @@
+streamlit
+pathway
+openai
+sentence-transformers
+langchain
+pandas
+numpy
+networkx
+matplotlib
