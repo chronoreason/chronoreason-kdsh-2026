@@ -12,44 +12,44 @@ Please review our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before contributing. 
 
 1. Fork the repository on GitHub
 2. Clone your fork locally:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/chronoreason-kdsh-2026.git
    cd chronoreason-kdsh-2026
-   \`\`\`
+   ```
 
 3. Add upstream remote:
-   \`\`\`bash
+   ```bash
    git remote add upstream https://github.com/chronoreason/chronoreason-kdsh-2026.git
-   \`\`\`
+   ```
 
 ### Set Up Development Environment
 
 1. Create virtual environment:
-   \`\`\`bash
+   ```bash
    ./setup.sh
-   \`\`\`
+   ```
 
 2. Install development dependencies:
-   \`\`\`bash
+   ```bash
    .venv/bin/pip install -r requirements.txt
    .venv/bin/pip install pytest pytest-cov black pylint
-   \`\`\`
+   ```
 
 3. Verify setup:
-   \`\`\`bash
+   ```bash
    ./dev.sh lint
    ./run_tests.sh
-   \`\`\`
+   ```
 
 ## 🔄 Development Workflow
 
 ### 1. Create Feature Branch
 
-\`\`\`bash
+```bash
 git checkout -b feature/your-feature-name
 # or for bug fixes:
 git checkout -b fix/issue-description
-\`\`\`
+```
 
 Branch naming convention:
 - \`feature/\` - New features
@@ -84,7 +84,7 @@ Follow these guidelines:
 
 Write clear, descriptive commit messages:
 
-\`\`\`bash
+```bash
 # Good commit messages
 git commit -m "Add semantic search fallback for timeout errors"
 git commit -m "Fix division by zero in contradiction_score"
@@ -93,24 +93,24 @@ git commit -m "Improve claim extraction with length filtering"
 # Less helpful
 git commit -m "Updates"
 git commit -m "Fixed stuff"
-\`\`\`
+```
 
 ### 4. Run Quality Checks
 
 Before pushing:
 
-\`\`\`bash
+```bash
 ./dev.sh lint
 ./run_tests.sh
 ./dev.sh imports
 ./dev.sh clean
-\`\`\`
+```
 
 ### 5. Push and Create Pull Request
 
-\`\`\`bash
+```bash
 git push origin feature/your-feature-name
-\`\`\`
+```
 
 ## ✅ Checklist Before Submitting PR
 
@@ -125,11 +125,11 @@ git push origin feature/your-feature-name
 
 ## 🧪 Testing Guidelines
 
-\`\`\`bash
+```bash
 ./run_tests.sh              # All tests
 ./run_tests.sh -v           # Verbose
 ./run_tests.sh -cov         # Coverage report
-\`\`\`
+```
 
 ## 📚 Additional Resources
 
