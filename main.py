@@ -5,10 +5,10 @@ from src.reasoning.claim_validator import validate_claim
 from src.reasoning.contradiction_score import contradiction_score
 from src.reasoning.decision_engine import final_decision
 
-with open("data/sample/story.txt") as f:
+with open("data/sample/In_search_of_the_castaways.txt") as f:
     story = f.read()
 
-with open("data/sample/backstory.txt") as f:
+with open("data/sample/backstory1.txt") as f:
     backstory = f.read()
 
 chunks = chunk_text(story)
